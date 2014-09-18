@@ -74,22 +74,16 @@ background-color: #CCC;
   text-decoration: none;
 }
 
-
-.chart__link,
-.chart__link:link,
-.chart__link:visited {
-  display: block;
-
-  color: #e2e2e2;
-  text-decoration: none;
-}
-
 .chart__label {
   bottom: -1.7em;
   position: absolute;
   width: 100%;
 
   text-align: center;
+}
+
+.chart__item:hover .chart__label {
+color: #FFF;
 }
 
 .chart__bar-wrap {
@@ -104,8 +98,14 @@ background-color: #CCC;
   position: absolute;
   right: 0;
   top: 0;
-
   background-color: rgba(127, 219, 255, 0.6);
+  transition: all 250ms linear;
+}
+
+.chart__bar:hover,
+.chart__bar:focus,
+.chart__bar:active {
+background-color: #9CF;
 }
 
 .chart__count {
