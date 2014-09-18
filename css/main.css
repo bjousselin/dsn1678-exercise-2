@@ -100,6 +100,7 @@ color: #FFF;
   top: 0;
   background-color: rgba(127, 219, 255, 0.6);
   transition: all 250ms linear;
+  -webkit-animation:slide-up 250ms linear;
 }
 
 .chart__bar:hover,
@@ -144,3 +145,11 @@ background-color: #9CF;
 	top:-4em;
 	opacity: 1;
 }
+
+
+@-webkit-keyframes slide-up {
+    0%   {top: 100%;}
+    100% {top: 0%;}
+} 
+	
+} 
